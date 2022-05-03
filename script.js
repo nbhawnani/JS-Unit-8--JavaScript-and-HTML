@@ -23,5 +23,20 @@ console.log(pElements[0].innerHTML,pElements[1].innerHTML)
 
 
 // Extracts 1st element matching the criteria
-const collection= document.querySelector("li")
+// specifying the class or ID or any other criteria
+// querySelector returns the 1st element matching the criteria
+const toDoListNode= document.querySelector("#to-do")
+toDoListNode.innerHTML="<i>This is my To Do List</i>"
+
+//querySelectorAll returns ALL elements matching the criteria
+const toDoListItems= document.querySelectorAll(".item")
+console.log(toDoListItems[2].innerHTML)
+
+// multiple elements using tag name as criteria
+const pItems= document.querySelectorAll("p")
+pItems[1].innerHTML=pItems[1].innerHTML+":"
+
+// multiple elements using tag name AND classname as criteria
+const pItem= document.querySelectorAll("p.item")
+console.log(pItem[0].innerHTML)
 
