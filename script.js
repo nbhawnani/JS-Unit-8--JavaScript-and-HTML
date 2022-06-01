@@ -37,6 +37,10 @@ const pItems= document.querySelectorAll("p")
 pItems[1].innerHTML=pItems[1].innerHTML+":"
 
 // multiple elements using tag name AND classname as criteria
-const pItem= document.querySelectorAll("p.item")
+const pItem= document.querySelectorAll(".item")
 console.log(pItem[0].innerHTML)
+pItem[0].style.backgroundColor="lightgreen";
+pItem[0].style.color="red";
+
+
 
